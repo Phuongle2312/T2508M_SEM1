@@ -20,13 +20,12 @@ int main()
                 int i = min;
                 while (i <= max)
                 {
-                    if (i%div==0)
+                    if (i % div == 0)
                     {
-                      printf("i = %d\n", i);
+                        printf("i = %d\n", i);
                     }
                     i++;
                 }
-                
             }
             else
             {
