@@ -48,8 +48,7 @@ double div(int a, int b)
 int main()
 {
     int choice = 0;
-    int a;
-    int b;
+    int a,b;
     int result = 0;
     while (1)
     {
