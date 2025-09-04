@@ -59,11 +59,23 @@ void nameArray()
     }
     
 }
+void numberArray()
+{
+    int ch,i = 0;
+    char str[12];
+    printf("The numbers: \n");
+    do
+    {
+        ch = getchar();
+        str[i] = ch;
+    } while (ch !='\n');
+    printf("+840986651866 %s", str);
+}
 int main()
 {
     while (1)
     {
-        printf("\n1.Goi ham showArray \n2.Goi ham inputArray \n3.Goi ham inputAdv \n4.Goi ham charArray\n5.Goi ham nameArray\n");
+        printf("\n1.Goi ham showArray \n2.Goi ham inputArray \n3.Goi ham inputAdv \n4.Goi ham charArray\n5.Goi ham nameArray\n6.Goi ham numberArray\n");
         int choice;
         printf("Nhap vao lua chon cua ban.\n");
         scanf("%d", &choice);
@@ -84,6 +96,9 @@ int main()
             break;
         case 5:
             nameArray();
+            break;
+        case 6:
+            numberArray();
             break;
 
         default:
