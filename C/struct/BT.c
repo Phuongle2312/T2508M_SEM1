@@ -60,6 +60,6 @@ int main()
         printf("Ngay thang nam sinh: %d %d %d\n", cls.std[i].birthday.day, cls.std[i].birthday.month, cls.std[i].birthday.year);
         printf("\n");
     }
-    printf("Tong so sinh vien trong lop T2508M: %d", cls.std);
+    printf("Tong so sinh vien trong lop T2508M: %d", cls.count);
     return 0;
 }
