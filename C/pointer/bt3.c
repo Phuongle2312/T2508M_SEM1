@@ -1,3 +1,4 @@
+// viết 1 hàm tìm giá trị lớn nhất và nhỏ nhất.
 #include <stdio.h>
 int findMax(int arr[], int n)
 {
@@ -23,11 +24,24 @@ int findMin(int arr[], int n)
     }
     return min;
 }
+void findMinMax(int n, int arr[], int *min, int *max)
+{
+    *min = *max = arr[0];
+    for (int i = 0; i < n; i++)
+    {
+        if (*min > arr[i])
+        {
+            *min = arr[i];
+        }
+        if (*max < arr[i])
+        {
+            *max = arr[i];
+        }
+    }
+}
 int main()
 {
     int arr[] = {1, 10, -5, 96, 22};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    printf("Gia tri lon nhat: %d\n", findMax(arr, n));
-    printf("Gia tri nho nhat: %d\n", findMin(arr, n));
-    return 0;
+    int min, max = 0;
+    
 }
